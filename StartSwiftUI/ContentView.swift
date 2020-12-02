@@ -8,10 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State // 값의 변화를 감지 -> 처음부터 view애 적용
+    private var isActivate: Bool = false
+
+    // body
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        
+        NavigationView{
+            VStack {
+                HStack {
+                    MyVstackView()
+                    MyVstackView()
+                    MyVstackView()
+                    
+                }// Hstack
+                .padding(isActivate ? 50.0 : 10.0)
+                //
+                .background(isActivate ? Color.yellow: Color.blue)
+                // 탭 제스쳐 추가
+                .onTapGesture {
+                    print("hstack click")
+                    // 애니메이션 추가
+                    withAnimation{
+                        // toggle() 알아서 t/f 변경
+                        self.isActivate.toggle()
+                    }
+                } // hstack end
+            
+            //navi 버튼 링크
+            NavigationLink(destination: MyVstackView() ) {
+                Text("네비게이션 버튼")
+            }
+            
+            }
+        } // navigationview
+        
+        
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
