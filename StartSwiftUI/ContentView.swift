@@ -40,6 +40,7 @@ struct ContentView: View {
             //navi 버튼 링크
             NavigationLink(destination: MyVstackView() ) {
                 Text("네비게이션 버튼")
+                Text("test")
             }
             
             }
