@@ -38,9 +38,14 @@ struct ContentView: View {
                 } // hstack end
             
             //navi 버튼 링크
-            NavigationLink(destination: MyVstackView() ) {
+            NavigationLink(destination: MyTextView() ) {
                 Text("네비게이션 버튼")
-                Text("test")
+                    .fontWeight(.heavy)
+                    .font(.system(size: 40))
+                    .padding(10)
+                    .background(Color.green)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(30)
             }
             
             }

@@ -12,6 +12,7 @@
 		D083BD39257754B600FE3349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D083BD38257754B600FE3349 /* Assets.xcassets */; };
 		D083BD3C257754B600FE3349 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D083BD3B257754B600FE3349 /* Preview Assets.xcassets */; };
 		D083BD4525775B2800FE3349 /* MyVsatckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083BD4425775B2800FE3349 /* MyVsatckView.swift */; };
+		D083BD482578AAEF00FE3349 /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083BD472578AAEF00FE3349 /* MyTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D083BD3B257754B600FE3349 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D083BD3D257754B600FE3349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D083BD4425775B2800FE3349 /* MyVsatckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVsatckView.swift; sourceTree = "<group>"; };
+		D083BD472578AAEF00FE3349 /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		D083BD33257754B100FE3349 /* StartSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D083BD472578AAEF00FE3349 /* MyTextView.swift */,
 				D083BD34257754B100FE3349 /* StartSwiftUIApp.swift */,
 				D083BD36257754B100FE3349 /* ContentView.swift */,
 				D083BD38257754B600FE3349 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D083BD4525775B2800FE3349 /* MyVsatckView.swift in Sources */,
+				D083BD482578AAEF00FE3349 /* MyTextView.swift in Sources */,
 				D083BD37257754B100FE3349 /* ContentView.swift in Sources */,
 				D083BD35257754B100FE3349 /* StartSwiftUIApp.swift in Sources */,
 			);
