@@ -9,6 +9,13 @@ import SwiftUI
 
 struct MyTextView: View {
     
+    @Binding
+    var isActivated: Bool
+    
+    init(isActivated: Binding<Bool> = .constant(false)) {
+        _isActivated = isActivated
+    }
+    
     @State // 값의 변화를 감지 -> 처음부터 view애 적용
     private var index: Int = 0
     
@@ -29,7 +36,13 @@ struct MyTextView: View {
                 .font(.system(size: 30))
                 .fontWeight(.bold)
                 .frame(minWidth: 0, maxWidth: .infinity,
-                       minHeight: 0, maxHeight: .infinity)
+                       minHeight: 0, maxHeight: 100)
+            Text("활성화 여부 \(String(isActivated))")
+                .font(.system(size: 30))
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .foregroundColor(self.isActivated ? Color.blue : Color.white)
+                .background(Color.black)
+            
             Spacer()
         }.background(backgroundColors[index])
         .edgesIgnoringSafeArea(.all)
